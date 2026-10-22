@@ -18,7 +18,7 @@ public class EVA2_23CAPTURAR {
    public static void main(String[] args) {
       // TODO code application logic here
       //SOLICITAR LAS CALIFICACIONES DE UN GRUPO Y PROMEDIO 
-      int califa, cant;
+      int califa = 0, cant;
       double promedio ;
       
       Scanner captu = new  Scanner (System.in);
@@ -27,10 +27,16 @@ public class EVA2_23CAPTURAR {
       captu.nextLine();
       for(int i = 0; i < cant ; i ++){
          System.out.println("captura la calificacion: ?");
-         califa = captu.nextInt();
+         califa = califa +  captu.nextInt(); //ACUMULADOR 
          captu.nextLine();
-         
+         System.out.println("acumulado = " + califa);
       }
+         promedio = califa / (cant * 1.0) ; //COMO VA ENTERO SE PONE *1.0 PARA QUE NO NUMEROS DECIMALES
+         System.out.println("Promedio = " + promedio );
+         
+         
+         
+      
          
       
          
