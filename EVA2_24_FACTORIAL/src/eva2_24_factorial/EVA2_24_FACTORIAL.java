@@ -34,15 +34,13 @@ public class EVA2_24_FACTORIAL {
      System.out.println("factorial de: "  + nume + " = " + facto );
       
      
-     
-     
+      
       for(int i =1; i <= nume;  i ++){
       //OPERACION 
       facto = facto * i;
       }
       
      System.out.println("factorial de: "  + nume + " = " + facto );
-      
      
      
      
